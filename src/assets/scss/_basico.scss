@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 70px;
+    background-color: $color-fondo;
+}
+nav{
+    background-color: $color-fondo !important;
+}
+.no-margin-padding{
+    margin: 0 !important;
+    padding: 0 !important;
+}

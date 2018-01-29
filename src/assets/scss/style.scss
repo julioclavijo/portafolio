@@ -1,0 +1,26 @@
+/*!
+    Designer Web: Julio Clavijo
+    Twitter: @julioclavijo_
+*/
+
+//DIRECTORIO
+
+//principal
+@import "variables";
+//EXTERNOS
+
+//Bootsrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//basicos
+@import "mixin";
+@import "basico";
+//definidos
+@import "fuentes";
+@import "iconos";
+@import "formas";
+@import "tipografia";
+@import "formulario";
+@import "colores";
+@import "navbar";//barra de navegacion
+@import "footer";//pie de pagina

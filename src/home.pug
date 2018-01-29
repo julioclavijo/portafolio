@@ -1,0 +1,121 @@
+doctype html
+html(lang='es')
+    head
+        include assets/include/head.pug
+        meta(name='description', content='Portafolio diseño gráfico Julio Clavijo')
+        title Portafolio diseño gráfico Julio Clavijo
+        //- titulo de la pagina
+    body
+        include assets/include/nav.pug
+        //- contenido
+        .container-fluid
+            .row.justify-content-center.fondo-amarillo
+                .titular.text-center
+                    h1.titulo Sancocho
+                    h2.subtitulo Pal´ guayabo
+            .row.justify-content-center.fondo-amarillo
+                img.img-fluid(src="assets/images/sanocho.png", alt="")
+            .row.d-flex.align-items-end.fondo-amarillo
+                img.img-ajuste-h(src="assets/images/svg-top-blanco.svg", alt="")
+            .row.justify-content-center#perfil.fondo-blanco
+                .col-md-6.col-sm-6.espacio-comodo
+                    .titular
+                        h1.titulo.text-center ingredientes
+                        h2.subtitulo.text-center de preparación.
+                        // incluir manifiesto
+                    .titular2.espacio-comodo
+                        h2.titulo.text-center julio clavijo
+                        h3.subtitulo.text-center portafolio diseño gráfico
+                    .perfil
+                        .row.justify-content-center
+                            img.rounded-circle.img-contacto(src="assets/images/Julio-Clavijo-Foto.png")
+                        h2.text-center perfil ocupacional
+                        p.text-justify Técnico profesional en Diseño Gráfico. Con experiencia en diagramación y creación de páginas web bajo códigos Html5 y Css3, soporte básico en Php y Js, uso de preprocesadores Pug y Sass, desarrollo de estrategias creativas, publicaciones digitales, manejo de programas de diseño, asesoría y servicio al cliente. Me identifica la comunicación asertiva, innovación, mejoramiento continuo y orientación al resultado.
+            .row.d-flex.align-items-end.fondo-amarillo
+                img.img-ajuste-h2(src="assets/images/svg-bottom-blanco.svg", alt="")
+            .row#galeria.fondo-amarillo.justify-content-center
+                .col-6.espacio-comodo
+                    .titular
+                        h1.titulo.text-center tipos de sancocho
+                        h2.subtitulo.text-center criollo.
+            .row.fondo-amarillo.justify-content-center
+                .col-6.espacio-comodo
+                    h1.text-center  GALERÍA
+            .row.fondo-amarillo
+                .col-12.d-flex.flex-row.justify-content-center.flex-wrap
+                    button.btn.btn-outline-primary(type="button" aria-pressed="true" data-rel="all") Todo
+                    button.btn.btn-outline-primary(type="button" aria-pressed="true" data-rel="web") Web
+                    button.btn.btn-outline-primary(type="button" aria-pressed="true" data-rel="edit") Editorial
+                    button.btn.btn-outline-primary(type="button" aria-pressed="true" data-rel="otro") Otros
+            #portafolio.row.justify-content-around.espacio-comodo
+                .card.producto.scale-anm.all.web
+                    img.card-img-top.img-fluid(src="assets/images/layout-citytemporal2.jpg")
+                    article.card-block.d-flex.flex-column.justify-content-end
+                        h2.card-title City Temporal
+                        h3: span.badge.badge-warning Web
+                        p.card-text Contenido
+                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
+                .card.producto.scale-anm.all.web
+                    img.card-img-top.img-fluid(src="assets/images/layout-lbtechnology.jpg")
+                    article.card-block.d-flex.flex-column.justify-content-end
+                        h2.card-title Lb Technology
+                        h3: span.badge.badge-warning Web
+                        p.card-text Contenido
+                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
+                .card.producto.scale-anm.all.web
+                    img.card-img-top.img-fluid(src="assets/images/layout-toner7.jpg")
+                    article.card-block.d-flex.flex-column.justify-content-end
+                        h2.card-title Toner 7
+                        h3: span.badge.badge-warning Web
+                        p.card-text Contenido
+                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
+                .card.producto.scale-anm.all.web
+                    img.card-img-top.img-fluid(src="assets/images/Web_Personal1.jpg")
+                    article.card-block.d-flex.flex-column.justify-content-end
+                        h2.card-title Granate
+                        h3: span.badge.badge-warning Web
+                        p.card-text Contenido
+                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
+                .card.producto.scale-anm.all.edit
+                    img.card-img-top.img-fluid(src="assets/images/Portada.jpg")
+                    article.card-block.d-flex.flex-column.justify-content-end
+                        h2.card-title Revista Wayne
+                        h3: span.badge.badge-warning Publicación dígital
+                        p.card-text Contenido
+                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
+                .card.producto.scale-anm.all.otro
+                    img.card-img-top.img-fluid(src="assets/images/Nucita1.jpg")
+                    article.card-block.d-flex.flex-column.justify-content-end
+                        h2.card-title Nucita
+                        h3: span.badge.badge-warning packaging
+                        p.card-text Contenido
+                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
+        .row.d-flex.align-items-end.fondo-amarillo
+            img.img-ajuste-h(src="assets/images/svg-top-cafe.svg", alt="")
+    .modal.fade#compra(role="dialog" tabindex="-1" aria-hidden="true"): .modal-dialog.modal-lg(role="document"): .modal-content
+        .modal-header
+            h3.modal-title.titulo-subrayado Resumen de pedido
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                span(aria-hidden="true") &times;
+        .modal-body
+            h4.modal-title Solo diligencia los datos para acompañar la compra
+            form(method="POST" action="#")
+                input(type="hidden" name="subject" value="asunto")
+                .form-group
+                    label(for="nombre") Nombre y apellido
+                    input.form-control#nombre(type="text" name="nombre" required="required")
+                .form-group
+                    label(for="email") Correo electrónico
+                    input.form-control#email(type="email" name="email" required="required")
+                .form-group
+                    label(for="phone") Teléfono o celular
+                    input.form-control#phone(type="email" name="phone" required="required")
+                .form-group
+                    label(for="producto") Has seleccionado el siguiente producto
+                    input.form-control#producto(type_="text" name="producto" disabled)
+                .form-group
+                    label(for="cost") Precio
+                    input.form-control#cost(type_="text" name="cost" disabled)
+                .form-group
+                    input.btn.btn-outline-primary(type="submit" value="Comprar")
+    include assets/include/footer.pug

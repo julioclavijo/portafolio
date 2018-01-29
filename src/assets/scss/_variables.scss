@@ -1,0 +1,29 @@
+//colores
+$color-fondo: #ffcc33;
+$color-blanco: #f2f2f2;
+$color-footer: #40221b;
+$color-texto: #333333;
+$color-titulo: #1a1a1a;
+$color-subtitulo: #fe5000;
+
+//tamaño de textos
+$font-p:'Roboto', sans-serif;
+$font-h:'Anton', sans-serif;
+$size-p: 16px;
+$size-h1: 47px;
+$size-h2: 29px;
+$size-h3: 18px;
+$size-titulo: 80px;
+$size-subtitulo: 50px;
+
+//boostrap
+$body-bg: $color-fondo;
+$font-family-base: $font-p;
+$theme-colors: (
+  "primary": #0074d9,
+  "warnign": #ff4136
+);
+
+$brand-warning: $color-fondo;
+$enable-rounded: false ;
+$theme-colors: map-remove($theme-colors, "success", "info", "danger");

@@ -1,0 +1,47 @@
+h1, h2, h3, h4{
+    font-family: $font-h;
+}
+h1{
+  font-size: $size-h1;
+}
+h2{
+  font-size: $size-h2;
+}
+h3{
+  font-size: $size-h3;
+}
+p{
+    font-size: $size-p;
+    font-family: $font-p;
+}
+.titular{
+    .titulo{
+        color: $color-titulo;
+        font-size: $size-titulo;
+        text-transform: uppercase;
+    }
+    .subtitulo{
+        color: $color-subtitulo;
+        font-size: $size-subtitulo;
+        text-transform: uppercase;
+
+    }
+}
+.titular2{
+    .titulo{
+        color: $color-titulo;
+        font-size: $size-h1;
+        text-transform: uppercase;
+    }
+    .subtitulo{
+        color: $color-subtitulo;
+        font-size: $size-h2;
+        text-transform: uppercase;
+
+    }
+}
+.footer-text{
+    p{
+        margin-bottom: 0 !important;
+    }
+}
