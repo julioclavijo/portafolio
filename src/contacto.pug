@@ -1,0 +1,27 @@
+doctype html
+html(lang='es')
+    head
+        include assets/include/head.pug
+        meta(name='description', content=' Contacto - Portafolio diseño gráfico Julio Clavijo')
+        title Contacto - Portafolio diseño gráfico Julio Clavijo
+        //- titulo de la pagina
+    body
+        include assets/include/nav.pug
+        //contenido
+        form(method="POST" action="#")
+            input(type="hidden" name="subject" value="asunto")
+            .form-group
+                label(for="nombre") Nombre y apellido
+                input.form-control#nombre(type="text" name="nombre" required="required")
+            .form-group
+                label(for="email") Correo electrónico
+                input.form-control#email(type="email" name="email" required="required")
+            .form-group
+                label(for="phone") Teléfono o celular
+                input.form-control#phone(type="email" name="phone" required="required")
+            .form-group
+                label(for="producto") Has seleccionado el siguiente producto
+                input.form-control#producto(type_="text" name="producto" disabled)
+            .form-group
+                input.btn.btn-outline-warning(type="submit" value="Enviar")
+        include assets/include/footer.pug

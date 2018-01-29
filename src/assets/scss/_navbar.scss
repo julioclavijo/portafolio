@@ -1,21 +1,25 @@
 /*Navbar*/
 nav{
-    a{
+    .navbar-brand{
+        margin-top: 10px;
+        padding: 0;
+    }
+    p{
+        color: $color-footer;
         font-family: $font-h;
-        color: $color-titulo;
-        &:hover{
-            color: $color-subtitulo;
-            border-bottom: 4px solid $color-subtitulo;
-        }
     }
     ul{
         li{
             &:hover{
-                border-bottom: 4px solid $color-subtitulo;
+                border-bottom: 1px solid $color-subtitulo;
             }
             a{
                 font-family: $font-h;
                 color: $color-titulo;
+                transition: 500ms all ease;
+                &:hover {
+                    color: $color-subtitulo;
+                }
             }
         }
     }

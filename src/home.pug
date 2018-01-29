@@ -48,74 +48,48 @@ html(lang='es')
                     button.btn.btn-outline-primary(type="button" aria-pressed="true" data-rel="edit") Editorial
                     button.btn.btn-outline-primary(type="button" aria-pressed="true" data-rel="otro") Otros
             #portafolio.row.justify-content-around.espacio-comodo
-                .card.producto.scale-anm.all.web
-                    img.card-img-top.img-fluid(src="assets/images/layout-citytemporal2.jpg")
-                    article.card-block.d-flex.flex-column.justify-content-end
-                        h2.card-title City Temporal
-                        h3: span.badge.badge-warning Web
-                        p.card-text Contenido
-                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
-                .card.producto.scale-anm.all.web
-                    img.card-img-top.img-fluid(src="assets/images/layout-lbtechnology.jpg")
-                    article.card-block.d-flex.flex-column.justify-content-end
-                        h2.card-title Lb Technology
-                        h3: span.badge.badge-warning Web
-                        p.card-text Contenido
-                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
-                .card.producto.scale-anm.all.web
-                    img.card-img-top.img-fluid(src="assets/images/layout-toner7.jpg")
-                    article.card-block.d-flex.flex-column.justify-content-end
-                        h2.card-title Toner 7
-                        h3: span.badge.badge-warning Web
-                        p.card-text Contenido
-                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
-                .card.producto.scale-anm.all.web
-                    img.card-img-top.img-fluid(src="assets/images/Web_Personal1.jpg")
-                    article.card-block.d-flex.flex-column.justify-content-end
-                        h2.card-title Granate
-                        h3: span.badge.badge-warning Web
-                        p.card-text Contenido
-                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
-                .card.producto.scale-anm.all.edit
-                    img.card-img-top.img-fluid(src="assets/images/Portada.jpg")
-                    article.card-block.d-flex.flex-column.justify-content-end
-                        h2.card-title Revista Wayne
-                        h3: span.badge.badge-warning Publicación dígital
-                        p.card-text Contenido
-                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
-                .card.producto.scale-anm.all.otro
-                    img.card-img-top.img-fluid(src="assets/images/Nucita1.jpg")
-                    article.card-block.d-flex.flex-column.justify-content-end
-                        h2.card-title Nucita
-                        h3: span.badge.badge-warning packaging
-                        p.card-text Contenido
-                        //button.btn.btn-warning.btn-sm.btn-block(data-toggle="modal" data-target="#compra") Comprar
+                .col-sm-6.col-md-4
+                    .card.producto.scale-anm.all.web
+                        img.card-img-top.img-fluid(src="assets/images/layout-citytemporal2.jpg")
+                        article.card-body.d-flex.flex-column.justify-content-end
+                            h2.card-title City Temporal
+                            h3: span.badge.badge-warning Web
+                            p.card-text Contenido
+                .col-sm-6.col-md-4
+                    .card.producto.scale-anm.all.web
+                        img.card-img-top.img-fluid(src="assets/images/layout-lbtechnology.jpg")
+                        article.card-body.d-flex.flex-column.justify-content-end
+                            h2.card-title Lb Technology
+                            h3: span.badge.badge-warning Web
+                            p.card-text Contenido
+                .col-sm-6.col-md-4
+                    .card.producto.scale-anm.all.edit
+                        img.card-img-top.img-fluid(src="assets/images/Portada.jpg")
+                        article.card-body.d-flex.flex-column.justify-content-end
+                            h2.card-title Revista Wayne
+                            h3: span.badge.badge-warning Publicación dígital
+                            p.card-text Contenido
+                .col-sm-6.col-md-4
+                    .card.producto.scale-anm.all.web
+                        img.card-img-top.img-fluid(src="assets/images/layout-toner7.jpg")
+                        article.card-body.d-flex.flex-column.justify-content-end
+                            h2.card-title Toner 7
+                            h3: span.badge.badge-warning Web
+                            p.card-text Contenido
+                .col-sm-6.col-md-4
+                    .card.producto.scale-anm.all.web
+                        img.card-img-top.img-fluid(src="assets/images/Web_Personal1.jpg")
+                        article.card-body.d-flex.flex-column.justify-content-end
+                            h2.card-title Granate
+                            h3: span.badge.badge-warning Web
+                            p.card-text Contenido
+                .col-sm-6.col-md-4
+                    .card.producto.scale-anm.all.otro
+                        img.card-img-top.img-fluid(src="assets/images/Nucita1.jpg")
+                        article.card-body.d-flex.flex-column.justify-content-end
+                            h2.card-title Nucita
+                            h3: span.badge.badge-warning Packaging
+                            p.card-text Contenido
         .row.d-flex.align-items-end.fondo-amarillo
             img.img-ajuste-h(src="assets/images/svg-top-cafe.svg", alt="")
-    .modal.fade#compra(role="dialog" tabindex="-1" aria-hidden="true"): .modal-dialog.modal-lg(role="document"): .modal-content
-        .modal-header
-            h3.modal-title.titulo-subrayado Resumen de pedido
-            button.close(type="button" data-dismiss="modal" aria-label="Close")
-                span(aria-hidden="true") &times;
-        .modal-body
-            h4.modal-title Solo diligencia los datos para acompañar la compra
-            form(method="POST" action="#")
-                input(type="hidden" name="subject" value="asunto")
-                .form-group
-                    label(for="nombre") Nombre y apellido
-                    input.form-control#nombre(type="text" name="nombre" required="required")
-                .form-group
-                    label(for="email") Correo electrónico
-                    input.form-control#email(type="email" name="email" required="required")
-                .form-group
-                    label(for="phone") Teléfono o celular
-                    input.form-control#phone(type="email" name="phone" required="required")
-                .form-group
-                    label(for="producto") Has seleccionado el siguiente producto
-                    input.form-control#producto(type_="text" name="producto" disabled)
-                .form-group
-                    label(for="cost") Precio
-                    input.form-control#cost(type_="text" name="cost" disabled)
-                .form-group
-                    input.btn.btn-outline-primary(type="submit" value="Comprar")
-    include assets/include/footer.pug
+        include assets/include/footer.pug
