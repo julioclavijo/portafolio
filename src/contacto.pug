@@ -8,20 +8,30 @@ html(lang='es')
     body
         include assets/include/nav.pug
         //contenido
-        form(method="POST" action="#")
-            input(type="hidden" name="subject" value="asunto")
-            .form-group
-                label(for="nombre") Nombre y apellido
-                input.form-control#nombre(type="text" name="nombre" required="required")
-            .form-group
-                label(for="email") Correo electrónico
-                input.form-control#email(type="email" name="email" required="required")
-            .form-group
-                label(for="phone") Teléfono o celular
-                input.form-control#phone(type="email" name="phone" required="required")
-            .form-group
-                label(for="producto") Has seleccionado el siguiente producto
-                input.form-control#producto(type_="text" name="producto" disabled)
-            .form-group
-                input.btn.btn-outline-warning(type="submit" value="Enviar")
+        .container-fluid
+            .row.justify-content-center.fondo-amarillo
+                .titular2.text-center
+                    h1.titulo Ahora pide a domicilio
+                    h2.subtitulo Sanchocho pal' guayabo
+            .row.justify-content-center.fondo-amarillo
+                img.img-fluid(src="assets/images/sanocho.png", alt="")
+        .container: .row.justify-content-center: .col-sm-.col-md-8
+            form(method="POST" action="#")
+                input(type="hidden" name="subject" value="asunto")
+                .form-group
+                    label(for="nombre") Nombre y apellido
+                    input.form-control#nombre(type="text" name="nombre" required="required")
+                .form-group
+                    label(for="email") Correo electrónico
+                    input.form-control#email(type="email" name="email" required="required")
+                .form-group
+                    label(for="phone") Teléfono o celular
+                    input.form-control#phone(type="email" name="phone" required="required")
+                .form-group
+                    label(for="producto") Algún comentario adicional
+                    input.form-control#producto(type_="text" name="producto")
+                .form-group
+                    input.btn.btn-outline-warning(type="submit" value="Enviar")
+        .container-fluid: .row.d-flex.align-items-end.fondo-amarillo
+            img.img-ajuste-h(src="assets/images/svg-top-cafe.svg", alt="")
         include assets/include/footer.pug

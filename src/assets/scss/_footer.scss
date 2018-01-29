@@ -2,10 +2,10 @@ footer{
     background-color: $color-footer;
     color: $color-fondo;
     a{
-        color: $color-fondo;
+        color: $color-blanco;
         text-decoration: none;
         &:hover{
-            color: $color-blanco;
+            color: $color-gris;
         }
     }
 }

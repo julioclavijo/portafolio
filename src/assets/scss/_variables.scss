@@ -5,6 +5,7 @@ $color-footer: #40221b;
 $color-texto: #333333;
 $color-titulo: #1a1a1a;
 $color-subtitulo: #fe5000;
+$color-gris: #eee;
 
 //tamaño de textos
 $font-p:'Roboto', sans-serif;
@@ -21,7 +22,7 @@ $body-bg: $color-fondo;
 $font-family-base: $font-p;
 $theme-colors: (
   "primary": #0074d9,
-  "warnign": #ff4136
+  "warning": #ffcc33
 );
 
 $brand-warning: $color-fondo;
